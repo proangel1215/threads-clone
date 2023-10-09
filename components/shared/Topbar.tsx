@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.svg";
 import logout from "@/public/assets/logout.svg";
+import { dark } from "@clerk/themes";
 
 function Topbar() {
   return (
@@ -25,6 +26,7 @@ function Topbar() {
 
         <OrganizationSwitcher
           appearance={{
+            baseTheme: dark,
             elements: {
               organizationSwitcherTrigger: "py-2 px-4",
             },
